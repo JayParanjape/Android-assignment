@@ -1,0 +1,26 @@
+package com.example.jayparanjape.counter;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+    TextView count;
+    int counter=0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        count = (TextView) findViewById(R.id.count);
+    }
+
+    public void countAdd (View view){
+        counter ++;
+        count.setText(Integer.toString(counter));
+    }
+    public void reset (View view){
+        counter = 0;
+        count.setText(Integer.toString(counter));
+    }
+}

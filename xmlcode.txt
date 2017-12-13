@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.jayparanjape.counter.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="311dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="152dp"
+        android:background="#000000"
+        android:onClick="countAdd"
+        android:text="Increase count"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="185dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="27dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="19dp"
+        android:background="#000000"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toTopOf="@+id/count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Press the increase count button to increase no. displayed and reset to get it back to 0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+</android.support.constraint.ConstraintLayout>
